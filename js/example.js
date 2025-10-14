@@ -1,9 +1,8 @@
-let age;
-var name;
-console.log(age)
-console.log(name)
-
-for (let i=0; i<10; 1++) {
-    console.log("Inside scope", i)
-}
-console.log("Oustside scope", i)
+document.getElementById("push").addEventListener("click", function() {
+    var age = document.getElementById("input")
+    if (age > 18) {
+        alert("You cannot vote")
+    } else {
+        alert("You can vote")
+    }
+})
